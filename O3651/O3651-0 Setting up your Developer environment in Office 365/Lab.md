@@ -4,12 +4,31 @@ In this lab, you will create a cloud development environment and build a cloud-h
 ## Exercise 1: Obtain Office 365 and Azure subscriptions 
 In this exercise you obtain trial subscriptions to Office 365 and Azure. If you already have these subscriptions, you can skip this exercise.
 
-1. Sign up for an Office 365 developer subscription.
-  1. Navigate to the [Office Dev Center](http://msdn.microsoft.com/en-us/library/office/fp179924(v=office.15).aspx)
-  2. Under the heading **Sign up for an Office 365 Developer Site** click **Try It Free**.<br/>
-     ![](Images/1.png?raw=true "Figure 1")
-  3. Fill out the form to obtain your trial O365 subscription.
-  4. When completed, you will have a developer site in the [subscription].sharepoint.com domain located at the root of your subscription (e.g. https://mysubscription.sharepoint.com)
+###Task 1 - Sign up for an Office 365 developer subscription
+Follow these steps to sign up for an Office 365 developer subscription.
+
+1. Navigate to the [Office Dev Center](http://msdn.microsoft.com/en-us/library/office/fp179924(v=office.15).aspx)
+2. Under the heading **Sign up for an Office 365 Developer Site** click **Try It Free**.<br/>
+  ![](img/1.png?raw=true "Figure 1")
+3. Fill out the form with your personal information accordingly (phone number, email address , company name etc.) and click the ** next ** button below the form to move to next step. 
+    ![Configuration HTML](Images/1.png)
+
+4.  Choose your username and password and click the ** Next ** button below then move to next step. 
+    ![Configuration HTML](Images/1.1.png)
+
+5.  Enter your mobile phone number, click **Text me**
+    ![Configuration HTML](Images/1.2.png)
+6.  You should be able to recive a register code in a few minutes. Put the code to text box click **Create my account**
+    ![Configuration HTML](Images/1.3.png)
+
+7.  Remember the information and click the ** You're ready to go ** button below to start the provisioning process. 
+  a.  Notice that this is a trial tenant which does not cause you any additional costs, and you don‚Äôt have to continue using it afterwards.
+    ![Configuration HTML](Images/1.4.png)
+ 
+ 
+8.  Wait for the initial provisioning actions to be completed. This could take anywhere from a few minutes to a half an hour.
+    ![Configuration HTML](Images/1.6.png)
+9.  When completed, you will have a developer site in the [subscription].sharepoint.com domain located at the root of your subscription (e.g. https://mysubscription.sharepoint.com)
 2. Enable Yammer for Social Expereince
   1. Log into [subscription].sharepoint.com
   2. Click **Admin/SharePoint**.
@@ -223,7 +242,7 @@ In this exercise, you will deploy the database and app to the O365/Azure environ
   10. **Add** the app package to the Apps for SharePoint library.
 7. Add the app to a SharePoint site
   1. Navigate to a site in your O365 tenancy.
-  2. Click **Site Contents**. (**NOTE:** If you are using the Developer site, it may have an older version of the app still installed from testing. You must remove the app from the site AND remove the entry from the ìApps in Testingî list or the new app will not install.)
+  2. Click **Site Contents**. (**NOTE:** If you are using the Developer site, it may have an older version of the app still installed from testing. You must remove the app from the site AND remove the entry from the ‚ÄúApps in Testing‚Äù list or the new app will not install.)
   3. Click **Add an App**.
   4. Click **From Your Organization**.<br/>
          ![](Images/32.png?raw=true "Figure 24")
