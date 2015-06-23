@@ -4,7 +4,7 @@
 
 This GitHub repo houses all of the content for the "Introduction to Office 365 Development" training.
 
-- O3651-0 [Setting up your Developer environment in Office 365](O3651-7%20Setting%20up%20your%20Developer%20environment%20in%20Office%20365)
+- O3651-0 [Setting up your Developer environment in Office 365](O3651-0%20Setting%20up%20your%20Developer%20environment%20in%20Office%20365)
 - O3651-1 [Overview of Office 365 Development](O3651-1%20Overview%20of%20Office%20365%20Development)
 - O3651-2 [Getting started with Apps for Office](O3651-2%20Getting%20started%20with%20Apps%20for%20Office)
 - O3651-3 [Getting started with Apps for SharePoint](O3651-3%20Getting%20started%20with%20Apps%20for%20SharePoint)
