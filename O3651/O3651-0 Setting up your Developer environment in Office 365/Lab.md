@@ -1,5 +1,5 @@
 # Setting up your Development Environment in Office 365
-In this lab, you will create a cloud development environment an
+In this lab, you will create a cloud development environment for Office 365. 
 
 ## Exercise 1: Obtain Office 365 and Azure subscriptions 
 In this exercise you obtain trial subscriptions to Office 365 and Azure. If you already have these subscriptions, you can skip this exercise.
@@ -44,7 +44,42 @@ In this step we'll either activate a new Azure Trial Subscription with our newly
   NOTE: YES, you need to enter your credit card info, this is how we prove you're an adult and not gaming the system. NO, we won't bill you unless you explicitly let us. You will get repeated emails asking if you want to start paying, and unless you respond to an email and agree to start paying, you won't get charged. 
 ![](http://i.imgur.com/FE5zQQR.png)
 
-###Task 3 - Enable Yammer
+####Option 2 - Tie your newly made O365 subscription to your current azure subscription. (challenging/complicated)
+
+00. Open an incognito/inPrivate/Private browser window. You can typically do this by right clicking on your favorite browser in the task bar, and selecting the private version it supports. 
+01. Sign into the [Azure Portal](https://manage.windowsazure.com/) with your current azure account.
+
+02. Click **+ New**
+
+    ![](img/0001_azure_portal_new_button.png)
+
+03. Select **App Services > Active Directory > Directory > Custom Create**
+
+    ![](img/0005_custom_create_active_directory.png)
+
+04. Select **Use existing directory**, and then **I am ready to be signed out now**
+
+    ![](img/00010_use_existing_directory.png)
+
+05. You will be signed out of the portal and redirected to a sign-in page. Sign in using the credentials for a global
+    administrator in your O365 tenant.
+
+    ![](img/00015_sign_in_as_directory_global_admin.png)
+
+06. When authenticated click **continue**. This will add your Azure account as a global administrator of the O365
+    directory.
+
+    ![](img/00020_accept_confirmation_dialog.png)
+
+07. Click **Sign out now** and when prompted sign back into your Azure account.
+
+    ![](img/00025_sign_out_and_sign_back_in.png)
+
+
+You have successfully associated your Azure account with your O365 tenant as a global administrator.
+This gives you the ability to manage the O365 directory using the Azure portal.
+
+###Task 3 (Optional) - Enable Yammer
 2. Enable Yammer for Social Expereince
   1. Log into [subscription].sharepoint.com
   2. Click **Admin/SharePoint**.
