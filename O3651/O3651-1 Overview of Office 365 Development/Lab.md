@@ -65,7 +65,7 @@ In this exercise, you will build you first Add-in for Excel using the Napa Tooli
 
 ### Create an add-in for Excel
 1. Select **Add New Project** ![](http://i.imgur.com/wcbfxto.png)
-2.
+
 3. Click on the Task Pane app for Office option. Name your Task Pane Project and click create.![](http://i.imgur.com/7PeKxvs.png)
 4. Delete Everything inside the `<body></body>` tag
 ![](http://i.imgur.com/0Syg3sD.png)
@@ -90,6 +90,9 @@ In this exercise, you will build you first Add-in for Excel using the Napa Tooli
 
 ![](http://i.imgur.com/Klmu40F.png)
 ![](http://i.imgur.com/9nnTsJJ.png)
+
+10. Return back to your code, and open it in Visual Studio.
+
 
 **Congratulations! You have completed investigating Apps for SharePoint and Office.**
 
