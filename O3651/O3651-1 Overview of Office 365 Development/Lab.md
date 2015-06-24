@@ -2,7 +2,7 @@
 In this lab, you will work with existing Office 365 apps.
 
 ## Prerequisites
-1. You must have an Office 365 tenant to complete this lab. If you do not have one, the lab for **O3651-7 Setting up your Developer environment in Office 365** shows you how to obtain a trial.
+1. You must have an Office 365 tenant to complete this lab. If you do not have one, the lab for **O3651-0 Setting up your Developer environment in Office 365** shows you how to obtain a trial.
 2. You must have Word and Excel 2013 available to complete this lab.
 3. You must have a Microsoft account to complete this lab. If you do not have one, [sign up](https://signup.live.com/signup.aspx?lic=1).
 
