@@ -1,5 +1,5 @@
 # Overview of Office 365 Development
-In this lab, you will work with existing Office 365 apps.
+In this lab, you will work with existing Office 365 add-ins and create your first .
 
 ## Prerequisites
 1. You must have an Office 365 tenant to complete this lab. If you do not have one, the lab for **O3651-0 Setting up your Developer environment in Office 365** shows you how to obtain a trial.
@@ -15,20 +15,20 @@ In this exercise you will download, install and investigate an existing App for 
   1. Click **Site Contents**.
   2. Click **Add an App**<br/>
      ![](Images/01.png?raw=true "Figure 1")
-  3. Click **SharePoint Store**
-  4. Search the SharePoint Store for **Discover SharePoint**<br/>
-     ![](Images/02.png?raw=true "Figure 2")
-  5. Click the **Discover SharePoint App**
+  3. Click **SharePoint Store** on the left side
+  4. Search the SharePoint Store for **OneNote**<br/>
+     ![](http://i.imgur.com/UxT21eL.png)
+  5. Click the **OneNote Class Notebook Creator App**
   6. Click **Add it**<br/>
-     ![](Images/03.png?raw=true "Figure 3")
+     ![](http://i.imgur.com/Shk7K5t.png)
   7. When prompted, click **Trust It**.<br/>
-     ![](Images/04.png?raw=true "Figure 4")
+     ![](http://i.imgur.com/oms33nm.png)
 3. Use the new App
-  1. Launch the **Discover SharePoint** App.<br/>
-     ![](Images/05.png?raw=true "Figure 5")
-  2. Note that the app launches into a full-screen experience driven from http://www.discoversharepoint.com.
+  1. Launch the **OneNote Class NoteBook Creator** App.<br/>
+     ![](http://i.imgur.com/YPW007t.png)
+  2. Note that the app launches into a full-screen experience
   3. Note that the app also provides a link to return to the SharePoint host web.<br/>
-     ![](Images/06.png?raw=true "Figure 6")
+     ![](http://i.imgur.com/n2BNQwC.png)
   4. Navigate the app to review its content.
   5. Click **Back to Site** to return to the host web.
 
@@ -42,11 +42,9 @@ In this exercise, you will download, install and investigate an App for Office h
   3. Click the **Insert** tab.
   4. In the **Apps** group, click **Store**.<br/>
      ![](Images/08.png?raw=true "Figure 8")
-  5. In the store, search for **Wikipedia**.
-  6. Click **Add** next to the **Wikipedia** app.<br/>
-     ![](Images/09.png?raw=true "Figure 9")
-  7. When prompted, click **Trust It**.<br/>
-     ![](Images/10.png?raw=true "Figure 10")
+  5. In the store, search for **Wikipedia* and click on it.
+  6. When prompted, click **Trust It**.<br/>
+     ![](http://i.imgur.com/YTtFInS.png)
 2. Use the new App
   1. In the Wikipedia task pane, search for **Azure**.
   2. Click **Microsoft Azure**.<br/>
@@ -60,50 +58,38 @@ In this exercise, you will download, install and investigate an App for Office h
 3. Close Word 2013.
 
 ## Exercise 3: Apps for Office (Excel)
-In this exercise, you will download, install and investigate an App for Office hosted by Excel.
+In this exercise, you will build you first Add-in for Excel using the Napa Tooling.
+### Go to the Napa Tools
+1. Navigate to [http://www.napacloudapp.com/](http://napacloudapp.com)
+2. Log in ![](http://i.imgur.com/S3g6syA.jpg)
 
-1. Sign up to access sample data.
-  1. Navigate to the [Azure Data Market](https://datamarket.azure.com).
-  2. Sign in with your Microsoft account.
-  3. Search for **crime**.
-  4. Click **2006-2008 Crime in the United States**<br/>
-     ![](Images/18.png?raw=true "Figure 18")
-  5. Click **Sign Up**<br/>
-     ![](Images/19.png?raw=true "Figure 19")
-  6. When complete, click **Explore this Dataset**.<br/>
-     ![](Images/20.png?raw=true "Figure 20")
-  7. Click **Show** to display the **Primary Account Key**<br/>
-     ![](Images/21.png?raw=true "Figure 21")
-2. Import data into the Excel spreadsheet
-  1. In Excel 2013, click the **Data** tab.
-  2. In the **Get External Data** group, click **From Web**.<br/>
-     ![](Images/22.png?raw=true "Figure 22")
-  3. Enter the following URL  and click **GO**. When prompted for a user name and password, use your **Primary Account Key** for both.
-     ```
-     https://api.datamarket.azure.com/data.gov/Crimes/v1/CityCrime
-     ```
-  4. Click **Import**. When prompted for a user name and password, use your **Primary Account Key** for both.
-  5. In the spreadsheet, locate the data for **Alaska**.
-  6. Hide the columns so that **State**, **City**, and **Viloent Crime** columns are next to each other . <br/>
-     ![](Images/23.png?raw=true "Figure 23")
-3. Install an existing App for Office
-  1. Launch **Excel 2013*.
-  2. When Excel 2013 starts, click **Blank Workbook**.<br/>
-     ![](Images/14.png?raw=true "Figure 14")
-  3. Click the **Insert** tab.
-  4. In the **Apps** group, click **Store**.<br/>
-     ![](Images/08.png?raw=true "Figure 15")
-  5. In the store, search for **Modern Trend**.
-  6. Click **Add** next to the **Modern Trend** app.<br/>
-     ![](Images/16.png?raw=true "Figure 16")
-  7. When prompted, click **Trust It**.<br/>
-     ![](Images/17.png?raw=true "Figure 17")
-4. Use the App for Office
-  1. In the app, click **Select Your Data**. <br/>
-     ![](Images/24.png?raw=true "Figure 24")
-  2. Select the cities and crime statistices.<br/>
-     ![](Images/25.png?raw=true "Figure 25")
-  3. Click **Create**.
+### Create an add-in for Excel
+1. Select **Add New Project** ![](http://i.imgur.com/wcbfxto.png)
+2.
+3. Click on the Task Pane app for Office option. Name your Task Pane Project and click create.![](http://i.imgur.com/7PeKxvs.png)
+4. Delete Everything inside the `<body></body>` tag
+![](http://i.imgur.com/0Syg3sD.png)
+
+5. Add the following code
+ 
+	`<div id="content-header"><div class="padding"><h1>Welcome!</h1>        </div></div><div id="content-main">      <div class="padding">          <p><strong>Select text and find related Flickr images.</strong></p>                   <button id="get-data-from-selection">Search Flickr</button>      </div><div id="Images"></div></div>`
+
+6. Navigate to Home.js.    In `if (result.status === Office.AsyncResultStatus.Succeeded) {` replace the content with : 
+`app.showNotification('The selected text is:', '"' + result.value + '"');                showImages(result.value);`
+![](http://i.imgur.com/I1FkZeW.png)
+
+7. Add the showImages Function
+    `function showImages(selectedText) {$('#Images').empty();var parameters = {tags: selectedText,tagsmode: "any",format: "json"};$.getJSON("https://secure.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", parameters,function (results) {$.each(results.items, function (index, item) {$('#Images').append($("<img style='height:100px; width: auto; padding-right: 5px;'/>").attr("src", item.media.m));});});}`
+![](http://i.imgur.com/bSa61w7.png)
+
+8. Run the add in.
+
+![](http://i.imgur.com/05iRkXI.png)
+
+9. Start the App, and test it out!
+
+![](http://i.imgur.com/Klmu40F.png)
+![](http://i.imgur.com/9nnTsJJ.png)
 
 **Congratulations! You have completed investigating Apps for SharePoint and Office.**
 
