@@ -2,7 +2,7 @@
 
 In this lab you will get hands-on experience working with the new SharePoint App model. Through the exercises in this lab you will learn how to create and test a SharePoint-hosted app as well as a provider-hosted app.
 
-**Prerequisites**: Before you can start this lab, you must have an Office 365 developer site. You must also have Visual Studio 2013 installed with Update 2. If you do not yet have an Office 365 developer site, you should step through the lab exercises for module 7 in which you will sign-up with Microsoft to create a new Office 365 developers site.
+**Prerequisites**: Before you can start this lab, you must have an Office 365 developer site. You must also have Visual Studio 2013 installed with Update 2. If you do not yet have an Office 365 developer site, you should step through the lab exercises for module 0 in which you will sign-up with Microsoft to create a new Office 365 developers site.
 
 ## Exercise 1: Creating and Debugging a SharePoint-hosted App
 1. Using the browser, navigate to your Office 365 developer site and log on using your credentials.
