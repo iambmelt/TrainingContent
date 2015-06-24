@@ -92,7 +92,12 @@ In this exercise, you will build you first Add-in for Excel using the Napa Tooli
 ![](http://i.imgur.com/9nnTsJJ.png)
 
 10. Return back to your code, and open it in Visual Studio.
+![](Images/Napa1.png?raw=true)
 
+11. Select C#, hit **continue**, and run the downloaded .exe
+![](Images/Napa2.png?raw=true)
+
+12. Now you can run it on your desktop
 
 **Congratulations! You have completed investigating Apps for SharePoint and Office.**
 
